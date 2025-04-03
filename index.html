@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Engenharia de Software</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre o curso</a></li>
+                <li><a href="materias.html">Matérias</a></li>
+                <li><a href="linguagens.html">Linguagens</a></li>
+                <li><a href="mais.html">Mais informações</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="home">
+        <p id="t1">Antes de conhecer nosso curso, preencha este formulário para conhecermos você melhor!</p>
+    </div>
+    <div class="form">
+        <form action="">
+            Nome: <input type="text"> <br> <br>
+
+            Idade: <input type="number"> <br> <br>
+
+            Data de nascimento: <input type="date"> <br> <br> 
+
+            Você estuda na Unifio? 
+            <input type="radio" name="unifio" value="sim"> Sim
+            <input type="radio" name="unifio" value="não"> Não <br><br>
+
+            Cidade: <input type="text"> <br> <br>
+            
+            Curso que deseja ou está cursando? <input type="text"> <br> <br>
+            <input type="submit" value=" Enviar"> 
+            <input type="reset" value="Limpar">
+        </form>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+                alert('SEUS DADOS FORAM ENVIADOS COM SUCESSO');
+                this.reset(); // Limpa o formulário
+            });
+        </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Isabelly Silva. Todos os direitos reservados. Dúvidas: <a href="isabelygiovanabatistadasilva@gmail.com">contato
+        
+        </a></p>
+    </footer>
+</body>
+</html>
